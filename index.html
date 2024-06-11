@@ -6,10 +6,9 @@
     <title>Kalipeiro</title>
     <style>
         body {
-            font-family: 'Courier New', Courier, Monospace;
-            line-height: 1.6;
-            background-color: #333; /* Fundo cinza */
-            color: #fff; /* Letras brancas */
+            font-family: "Courier New", Monospace;
+            background-color: #333;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
@@ -19,51 +18,36 @@
             background-color: #333;
         }
         header h1 {
-            color: yellow; /* Título em amarelo */
+            color: #ff0; /* Amarelo */
         }
         nav ul {
             list-style-type: none;
             padding: 0;
         }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li.red {
+            color: red;
+        }
         nav ul ul {
             margin-left: 20px;
+        }
+        nav ul ul li:before {
+            content: "├── ";
+        }
+        a {
+            color: #00f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             margin-top: 20px;
-        }
-        .tree {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .tree li {
-            margin: 0;
-            padding: 0 0 0 1em;
-            line-height: 2em;
-            font-size: 16px;
-            position: relative;
-        }
-        .tree li::before {
-            content: "├── ";
-            position: absolute;
-            left: 0;
-        }
-        .tree li:last-child::before {
-            content: "└── ";
-        }
-        .tree ul {
-            margin-left: 1em;
-            padding-left: 1em;
-            border-left: 1px solid #fff;
-        }
-        .tree ul ul {
-            margin-left: 1em;
-        }
-        .category {
-            color: red; /* Nomes das categorias em vermelho */
         }
     </style>
 </head>
@@ -72,36 +56,36 @@
         <h1>Kalipeiro</h1>
     </header>
     <nav>
-        <ul class="tree">
-            <li class="category">Design e Criação
+        <ul>
+            <li class="red">Design e Criação
                 <ul>
-                    <li class="category">Identidade Visual
+                    <li>Identidade Visual
                         <ul>
                             <li>Logo Design</li>
                             <li>Design de Avatar</li>
                         </ul>
                     </li>
-                    <li class="category">Materiais Impressos
+                    <li>Materiais Impressos
                         <ul>
                             <li>Design de Cartão de Visitas</li>
                             <li>Design de Arte para Flyer</li>
                             <li>Menu para Restaurantes (1 a 10 páginas)</li>
                         </ul>
                     </li>
-                    <li class="category">Materiais Digitais
+                    <li>Materiais Digitais
                         <ul>
                             <li>Design de Capa de Livros para Amazon</li>
                             <li>Design Microsite Linktree</li>
                             <li>Shopify Ecommerce Design</li>
                             <li>WordPress Website Design</li>
-                            <li>Menu Digital via QR Code</li>
+                            <li><a href="https://www.kalipeiro.online/">Kalipeiro Online: Menu Digital via QR Code</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="category">Produção e Impressão
+            <li class="red">Produção e Impressão
                 <ul>
-                    <li class="category">Produtos Promocionais
+                    <li>Produtos Promocionais
                         <ul>
                             <li>Impressão de Logo em Pratos e Louças</li>
                             <li>Impressão de Capas de Telefone</li>
@@ -109,7 +93,7 @@
                             <li>Canetas e Lápis Promocionais</li>
                         </ul>
                     </li>
-                    <li class="category">Material Publicitário
+                    <li>Material Publicitário
                         <ul>
                             <li>Storefront Outdoor Logo/Name</li>
                             <li>Banner em Vinil 2m x 1.5m</li>
@@ -118,24 +102,24 @@
                     </li>
                 </ul>
             </li>
-            <li class="category">Fotografia e Vídeo
+            <li class="red">Fotografia e Vídeo
                 <ul>
-                    <li class="category">Fotografia Comercial
+                    <li>Fotografia Comercial
                         <ul>
                             <li>Fotografia de Produto</li>
                             <li>Fotografia para Airbnb e Hotéis</li>
                         </ul>
                     </li>
-                    <li class="category">Produção de Vídeo
+                    <li>Produção de Vídeo
                         <ul>
                             <li>Anúncio em Vídeo para TikTok</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="category">Publicidade Digital e Tradicional
+            <li class="red">Publicidade Digital e Tradicional
                 <ul>
-                    <li class="category">Campanhas Online
+                    <li>Campanhas Online
                         <ul>
                             <li>Anúncios para Airbnb e Booking</li>
                             <li>Anúncios para Meta Plataformas</li>
@@ -146,28 +130,28 @@
                             <li>Campanhas de Instagram</li>
                         </ul>
                     </li>
-                    <li class="category">Publicidade Offline
+                    <li>Publicidade Offline
                         <ul>
                             <li>Mídia OOH (Out of Home)</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="category">Desenvolvimento e Tecnologia
+            <li class="red">Desenvolvimento e Tecnologia
                 <ul>
-                    <li class="category">Desenvolvimento Web
+                    <li>Desenvolvimento Web
                         <ul>
                             <li>Desenvolvimento de Webapps</li>
                             <li>iOS App Development</li>
                             <li>Android App Development</li>
                         </ul>
                     </li>
-                    <li class="category">Sistemas de Comunicação
+                    <li>Sistemas de Comunicação
                         <ul>
                             <li>Whatsapp Chatbot System</li>
                         </ul>
                     </li>
-                    <li class="category">Serviços de TI
+                    <li>Serviços de TI
                         <ul>
                             <li>Atualização para Windows 11</li>
                             <li>Instalação Ubuntu</li>
@@ -175,16 +159,16 @@
                     </li>
                 </ul>
             </li>
-            <li class="category">Consultoria e Gestão
+            <li class="red">Consultoria e Gestão
                 <ul>
-                    <li class="category">Consultoria de Negócios
+                    <li>Consultoria de Negócios
                         <ul>
                             <li>Consultoria para Restaurantes</li>
                             <li>Gerenciamento de Ideias de Marketing</li>
                             <li>Gerenciamento de Inventário/Estoque</li>
                         </ul>
                     </li>
-                    <li class="category">Soluções de Pagamento
+                    <li>Soluções de Pagamento
                         <ul>
                             <li>Cartão de Visita com QR Code Pix</li>
                             <li>Implementação no iFood</li>
@@ -192,23 +176,23 @@
                     </li>
                 </ul>
             </li>
-            <li class="category">Pesquisa e Análise de Dados
+            <li class="red">Pesquisa e Análise de Dados
                 <ul>
-                    <li class="category">Pesquisa de Mercado
+                    <li>Pesquisa de Mercado
                         <ul>
                             <li>Serviços de Pesquisa de Mercado</li>
                         </ul>
                     </li>
-                    <li class="category">Análise de Dados
+                    <li>Análise de Dados
                         <ul>
                             <li>Análise de Dados e Relatórios</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="category">Logística e Distribuição
+            <li class="red">Logística e Distribuição
                 <ul>
-                    <li class="category">Gestão de Materiais
+                    <li>Gestão de Materiais
                         <ul>
                             <li>Serviços de Logística para Materiais Promocionais</li>
                             <li>E-commerce Fulfillment</li>
@@ -216,9 +200,9 @@
                     </li>
                 </ul>
             </li>
-            <li class="category">Educação e Treinamento
+            <li class="red">Educação e Treinamento
                 <ul>
-                    <li class="category">Capacitação
+                    <li>Capacitação
                         <ul>
                             <li>Workshops e Treinamentos para Clientes</li>
                         </ul>
